@@ -184,7 +184,7 @@ loop L1						; loop l1
 LEnd:
 
 	ret			; return
-insertionSort ENDP
+bubbleSort ENDP
 
 
 
