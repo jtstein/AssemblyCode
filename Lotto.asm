@@ -30,9 +30,9 @@ mov esi, offset numbers			; for generateLotto proc
 mov ecx, LENGTHOF numbers		; for generateLotto proc
 call generateLotto				; fills numbers array with random values between 1-42
 
-mov esi, offset numbers			; for insertionSort proc
-mov ecx, lengthof numbers		; for insertionSort proc
-call insertionSort				; sorts numbers array
+mov esi, offset numbers			; for bubbleSort proc
+mov ecx, lengthof numbers		; for bubbleSort proc
+call bubbleSort				; sorts numbers array
 
 
 mov esi, offset numbers			; for displayArr proc
@@ -138,7 +138,7 @@ LEnd:
 changeDuplicates ENDP
 
 
-insertionSort PROC
+bubbleSort PROC
 ;===============================================================
 ; Recieves: offset of filled unsorted array in esi, 
 ;			length of arrays in ecx
